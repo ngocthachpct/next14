@@ -1,0 +1,38 @@
+.menu-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.menu-group-left {
+  flex: 0 0 20%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu-group-center {
+  flex: 0 0 60%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu-group-right {
+  flex: 0 0 20%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.ant-menu-item-selected {
+  background-color: #222222 !important;
+}
+
+.ant-menu {
+  display: flex;
+  align-items: center;
+  height: 80px;
+  background-color: #636363 !important;
+}
+
+.ant-layout {
+  background-color: white !important;
+}

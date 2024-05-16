@@ -1,0 +1,10 @@
+#top-sider{
+    background-color: white;
+    color: black;
+    font-weight: 800;
+    font-size: larger;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
