@@ -1,10 +1,71 @@
 #top-sider{
     background-color: white;
-    color: black;
+    color: rgb(236, 214, 214);
     font-weight: 800;
     font-size: larger;
     height: 10vh;
     display: flex;
     align-items: center;
     justify-content: space-around;
+}
+
+#center-sider{
+    background-color: white;
+    color: black;
+    font-weight: 800;
+    font-size: larger;
+    height: 13vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#bottom-sider{
+    background-color: white;
+    color: black;
+    font-weight: 800;
+    font-size: larger;
+    height: 77vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content:flex-start ;
+}
+
+#form1{
+    margin-left: 10vh;
+    margin-right: 10vh;
+}
+
+#form3{
+    margin-top: 3vh;
+    margin-left: 10vh;
+    margin-right: 10vh;
+    border: 1px solid black;
+    border-radius: 3%;
+    height: 80vh;
+    background-color: white;
+}
+
+#form3B{
+    margin-top: 3vh;
+    margin-left: 10vh;
+    margin-right: 10vh;
+    border: 1px solid black;
+    border-radius: 4px;
+    height: 20vh;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#form4{
+    margin-top: 3vh;
+    margin-left: 10vh;
+    margin-right: 10vh;
+    border: 1px solid black;
+    border-radius: 3%;
+    height: 20vh;
+    background-color: white;
 }
