@@ -10,9 +10,9 @@ const data2 = ["셀바스에이아이-저염도시락", "셀비스에이아이�
 const ListItem: React.FC = () => (
   <>
     {/* <Divider >Default Size</Divider> */}
-    <List
+    <List style={{ backgroundColor: "#EEEEEE" }}
       header={
-        <div style={{ display: "flex", alignItems: "flex-start" }}>
+        <div style={{ display: "flex", alignItems: "flex-start", marginLeft: '2vw' }}>
           즐겨찾기
         </div>
       }
@@ -21,8 +21,16 @@ const ListItem: React.FC = () => (
         <List.Item
           style={{
             textAlign: "left",
+            paddingLeft: "1vw",
+            paddingRight: "1vw",
+            marginLeft: "0.5vw",
+            marginRight: "0.5vw",
+            marginTop: "0.5vh",
+            border: "1px solid #EEEEEE",
+            borderRadius: "5px",
             display: "flex",
             justifyContent: "space-between",
+            backgroundColor: "white",
           }}
         >
           <div>
@@ -34,10 +42,10 @@ const ListItem: React.FC = () => (
         </List.Item>
       )}
     />
-    <Divider orientation="left"></Divider>
     <List
+      style={{ backgroundColor: "#EEEEEE", height: '100vh'}}
       header={
-        <div style={{ display: "flex", alignItems: "flex-start" }}>
+        <div style={{ display: "flex", alignItems: "flex-start", marginLeft: '2vw' }}>
           대상자 목록
         </div>
       }
@@ -46,6 +54,15 @@ const ListItem: React.FC = () => (
         <List.Item
           style={{
             textAlign: "left",
+            paddingLeft: "1vw",
+            paddingRight: "1vw",
+            marginLeft: "0.5vw",
+            marginRight: "0.5vw",
+            marginTop: "0.5vh",
+            marginBottom: "0.5vh",
+            backgroundColor: "white",
+            border: "1px solid #EEEEEE",
+            borderRadius: "5px",
             display: "flex",
             justifyContent: "space-between",
           }}

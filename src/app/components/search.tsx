@@ -1,42 +1,26 @@
-import React, { useState } from 'react';
-import { Input } from 'antd';
+import React from 'react';
 import { FaMagnifyingGlass } from "react-icons/fa6";
 
-const onChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-  console.log(e);
-};
-
 const Search: React.FC = () => {
-  const [isFocused, setIsFocused] = useState(false);
-
-  const handleFocus = () => {
-    setIsFocused(true);
-  };
-
-  const handleBlur = () => {
-    setIsFocused(false);
-  };
 
   const inputStyle = {
     border: 'none',
-    borderBottom: '1px solid black', 
-    transition: 'border-color 0.3s',
-    ...(isFocused && {
-      borderBottomColor: 'black', 
-      boxShadow: '0 0 0 2px white',
-    }),
+    backgroundColor: '#EEEEEE',
+    borderRadius: '0px',
+    width: '15vw',
+    borderBottom: '1px solid black',
+    outline: 'none',
+    ':focus': {
+      borderBottom: '1px solid black', // keep the border-bottom consistent on focus
+      backgroundColor: '#EEEEEE' // ensure the background remains the same
+    }
   };
+  
 
   return (
-    <Input
-      placeholder="식단 검색"
-      allowClear
-      onChange={onChange}
-      onFocus={handleFocus}
-      onBlur={handleBlur}
-      style={inputStyle}
-      suffix={<FaMagnifyingGlass />}
-    />
+    <div style={{display: 'flex', justifyContent: 'flex-start', alignItems: 'flex-start', marginLeft: '0vw'}}>
+      <input placeholder="식단 검색" style={inputStyle}></input><FaMagnifyingGlass style={{marginLeft: '1vw', marginBottom: '-1vw'}}/>
+    </div>
   );
 };
 

@@ -10,14 +10,15 @@
 }
 
 #center-sider {
-    background-color: white;
+    background-color: #EEEEEE;
     color: black;
     font-weight: 800;
     font-size: larger;
-    height: 13vh;
+    height: 10vh;
     display: flex;
     align-items: center;
     justify-content: space-around;
+    margin-bottom: 2vh;
 }
 
 #bottom-sider {
@@ -35,6 +36,10 @@
     margin-top: 3vh;
 }
 
+#form2 {
+  margin-top: 5vh;
+}
+
 #form3 {
     margin-top: 3vh;
     margin-left: 10vw;
@@ -42,7 +47,7 @@
     border: 1px solid black;
     border-radius: 10px;
     height: auto;
-    background-color: white;
+    background-color: #EEEEEE;
     padding-top: 20px;
 }
 
@@ -53,7 +58,7 @@
     border: 1px solid black;
     border-radius: 4px;
     height: 15vh;
-    background-color: white;
+    background-color: #EEEEEE;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -64,7 +69,7 @@
     margin-bottom: 2vh;
     border-radius: 4px;
     height: auto;
-    background-color: white;
+    background-color: #EEEEEE;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -92,7 +97,7 @@
     border: 1px solid black;
     border-radius: 10px;
     height: 100px;
-    background-color: white;
+    background-color: #EEEEEE;
     padding-top: 20px;
 }
   

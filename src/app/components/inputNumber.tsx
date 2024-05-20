@@ -15,10 +15,10 @@ const HookUsage: React.FC = () => {
     return (
         <Row gutter={8} align="middle">
             <Col>
-                <Button onClick={increment}>+</Button>
+                <Button onClick={increment} style={{border: "1px solid black", backgroundColor: "#EEEEEE"}}>+</Button>
             </Col>
             <Col>
-                <Input value={value} readOnly style={{ textAlign: "center", maxWidth: "5vw" }} />
+                <Input value={value} readOnly style={{ textAlign: "center", maxWidth: "6vw" }} />
             </Col>
             <Col>
                 <Button onClick={decrement}>-</Button>

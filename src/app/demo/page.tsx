@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import { Flex, Layout, Button, Form, Input, Select, Row, Space, Col } from "antd";
-import { PlusOutlined, UsergroupAddOutlined, SettingOutlined, ExclamationCircleFilled } from "@ant-design/icons";
+import { PlusOutlined, UsergroupAddOutlined, SettingOutlined, ExclamationCircleFilled, CloseCircleFilled } from "@ant-design/icons";
 import "./page.css";
 import Search from "../components/search";
 import ListItem from "../components/listItem";
@@ -28,8 +28,8 @@ const siderStyle: React.CSSProperties = {
   lineHeight: "120px",
   color: "#fff",
   backgroundColor: "white",
-  marginRight: "10px",
-  marginLeft: "40px",
+  marginRight: "2px",
+  marginLeft: "1vw",
   marginTop: "10px",
 };
 
@@ -99,14 +99,14 @@ const BlogsPage: React.FC = () => {
             <div id="form2">
               <Row>
                 <Col span={3}></Col>
-                <Col span={5} style={{ display: "flex", justifyContent: "flex-start" }}>영양 기준</Col>
+                <Col span={5} style={{ display: "flex", justifyContent: "flex-start", fontSize: "2.5vh", fontWeight: "bolder" }}>영양 기준</Col>
                 <Col span={12} style={{ display: "flex", justifyContent: "flex-end" }}>
                   <Button
                     type="primary"
                     shape="round"
                     icon={<SettingOutlined />}
                     size="middle"
-                    style={{ backgroundColor: "#636363" }}
+                    style={{ backgroundColor: "#CCCCCC", fontWeight: "bold", color: "black"}}
                   >
                     상세한 영양 기준 설정
                   </Button>
@@ -139,7 +139,7 @@ const BlogsPage: React.FC = () => {
                 <Row>
                   <Col span={2}></Col>
                   <Col span={3} style={{ textAlign: "left" }}>
-                    당류 &emsp;<ExclamationCircleFilled />
+                    당류 &emsp;<ExclamationCircleFilled style={{ color: '#636363' }} />
                   </Col>
                   <Col span={6}>
                     <HookUsage />
@@ -148,8 +148,11 @@ const BlogsPage: React.FC = () => {
                   <Col span={6}>
                     <HookUsage />
                   </Col>
-                  <Col span={6} style={{ textAlign: "left" }}>
+                  <Col span={3} style={{ textAlign: "left" }}>
                     g
+                  </Col>
+                  <Col span={3} style={{ textAlign: "left" }}>
+                    <CloseCircleFilled style={{ color: '#636363' }} />
                   </Col>
                 </Row>
                 <Row>
@@ -166,27 +169,11 @@ const BlogsPage: React.FC = () => {
                   <Col span={6}>
                     <HookUsage />
                   </Col>
-                  <Col span={6} style={{ textAlign: "left" }}>
+                  <Col span={3} style={{ textAlign: "left" }}>
                     g 이상
                   </Col>
-                </Row>
-                <Row>
-                  <hr style={{ height: "2px", width: "45vw" }}></hr>
-                </Row>
-                <Row>
-                  <Col span={2}></Col>
                   <Col span={3} style={{ textAlign: "left" }}>
-                    지방 &emsp;<ExclamationCircleFilled />
-                  </Col>
-                  <Col span={6}>
-                    <HookUsage />
-                  </Col>
-                  <Col span={1} style={{ fontSize: "20px" }}>~</Col>
-                  <Col span={6}>
-                    <HookUsage />
-                  </Col>
-                  <Col span={6} style={{ textAlign: "left" }}>
-                    g
+                    <CloseCircleFilled style={{ color: '#636363' }} />
                   </Col>
                 </Row>
                 <Row>
@@ -195,7 +182,7 @@ const BlogsPage: React.FC = () => {
                 <Row>
                   <Col span={2}></Col>
                   <Col span={3} style={{ textAlign: "left" }}>
-                    포화지방 &emsp;<ExclamationCircleFilled />
+                    지방 &emsp;<ExclamationCircleFilled style={{ color: '#636363' }} />
                   </Col>
                   <Col span={6}>
                     <HookUsage />
@@ -204,8 +191,33 @@ const BlogsPage: React.FC = () => {
                   <Col span={6}>
                     <HookUsage />
                   </Col>
-                  <Col span={6} style={{ textAlign: "left" }}>
+                  <Col span={3} style={{ textAlign: "left" }}>
                     g
+                  </Col>
+                  <Col span={3} style={{ textAlign: "left" }}>
+                    <CloseCircleFilled style={{ color: '#636363' }} />
+                  </Col>
+                </Row>
+                <Row>
+                  <hr style={{ height: "2px", width: "45vw" }}></hr>
+                </Row>
+                <Row>
+                  <Col span={2}></Col>
+                  <Col span={3} style={{ textAlign: "left" }}>
+                    포화지방 &emsp;<ExclamationCircleFilled style={{ color: '#636363' }} />
+                  </Col>
+                  <Col span={6}>
+                    <HookUsage />
+                  </Col>
+                  <Col span={1} style={{ fontSize: "20px" }}>~</Col>
+                  <Col span={6}>
+                    <HookUsage />
+                  </Col>
+                  <Col span={3} style={{ textAlign: "left" }}>
+                    g
+                  </Col>
+                  <Col span={3} style={{ textAlign: "left" }}>
+                    <CloseCircleFilled style={{ color: '#636363' }} />
                   </Col>
                 </Row>
                 <Row>
@@ -222,16 +234,19 @@ const BlogsPage: React.FC = () => {
                   <Col span={6}>
                     <HookUsage />
                   </Col>
-                  <Col span={6} style={{ textAlign: "left" }}>
+                  <Col span={3} style={{ textAlign: "left" }}>
                     mg 이하
+                  </Col>
+                  <Col span={3} style={{ textAlign: "left" }}>
+                    <CloseCircleFilled style={{ color: '#636363' }} />
                   </Col>
                 </Row>
               </div>
               <div id="form3B">
                 <Row>
-                  <Col span={6} style={{ textAlign: "left", width: '28vw' }}>영양소 추가</Col>
+                  <Col span={6} style={{ textAlign: "left", width: '30vw' }}>영양소 추가</Col>
                   <Col span={14} style={{ textAlign: "left" }}>
-                    <Input suffix={<FaMagnifyingGlass />} />
+                    <Input suffix={<FaMagnifyingGlass />} style={{borderRadius: '40px', marginLeft: '-2vw'}}/>
                   </Col>
                   <Col span={4}></Col>
                 </Row>
@@ -268,9 +283,9 @@ const BlogsPage: React.FC = () => {
                   </Col>
                   <Col span={1} className="center-col"></Col>
                   <Col span={20} className="right-col">
-                    <Row style={{display: 'flex',  justifyContent: 'flex-start' ,marginLeft: '2vw'}}>포함 (별도용기)</Row>
-                    <Row style={{display: 'flex',  justifyContent: 'flex-start' ,marginLeft: '2vw'}}>비포함</Row>
-                    <Row style={{display: 'flex',  justifyContent: 'flex-start' ,marginLeft: '2vw'}}>4개</Row>
+                    <Row style={{ display: 'flex', justifyContent: 'flex-start', marginLeft: '2vw' }}>포함 (별도용기)</Row>
+                    <Row style={{ display: 'flex', justifyContent: 'flex-start', marginLeft: '2vw' }}>비포함</Row>
+                    <Row style={{ display: 'flex', justifyContent: 'flex-start', marginLeft: '2vw' }}>4개</Row>
                   </Col>
                 </Row>
               </div>
