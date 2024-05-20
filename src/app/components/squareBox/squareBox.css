@@ -1,0 +1,209 @@
+.box {
+  width: 120px; /* Fixed width */
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  padding: 2px;
+  box-sizing: border-box;
+  background-color: #EEEEEE;
+  border-radius: 3px;
+  margin-right: 20px;
+  flex-shrink: 0; /* Prevent shrinking */
+}
+
+.box1 {
+  width: 5vw;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid black;
+  padding: 2px;
+  box-sizing: border-box;
+  margin-top: 5px;
+  background-color: #EEEEEE;
+  border-radius: 3px;
+}
+
+.box2 {
+  width: 80px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid black;
+  padding: 2px;
+  box-sizing: border-box;
+  margin-top: 5px;
+  background-color: #EEEEEE;
+  border-radius: 15px;
+}
+
+
+
+.row {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.square1,
+.square2 {
+  margin: 1px;
+  background-color: #EEEEEE;
+  border: 2px solid black;
+}
+
+.square1 {
+  width: 20px;
+  height: 15px;
+  border-radius: 1px;
+}
+
+.square2 {
+  width: 34px;
+  height: 28px;
+  border-radius: 2px;
+}
+
+
+.square5 {
+  width: 28px;
+  height: 15px;
+  border-radius: 4px;
+  margin: 1px;
+  background-color: #EEEEEE;
+  border: 2px solid black;
+}
+
+.square6 {
+  width: 20px;
+  height: 28px;
+  border-radius: 4px;
+  margin-left: 4px;
+}
+
+.square7 {
+  width: 35px;
+  height: 50px;
+  border-radius: 10px 4px 4px 10px;
+  background-color: #EEEEEE;
+  border: 2px solid black;
+  margin-right: 2px;
+
+}
+
+.square8 {
+  width: 35px;
+  height: 50px;
+  border-radius: 4px 10px 10px 4px;
+  background-color: #EEEEEE;
+  border: 2px solid black;
+  margin-right: 1px;
+
+}
+
+.square3 {
+  width: 40px;
+  height: 20px;
+  border-radius: 2px 2px 2px 8px;
+}
+
+.square4 {
+  width: 48px;
+  height: 32px;
+  border-radius: 4px 8px 4px 4px;
+  background-color: #EEEEEE;
+  border: 2px solid black;
+  margin-left: 1px;
+  margin-top: -3px;
+}
+
+.text {
+  color: black;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+/* New CSS for clicked state */
+.clicked {
+  background-color: #636363 !important;
+  border-color: white !important;
+}
+
+.clicked .square1 {
+  background-color: #636363 !important;
+  border-color: white !important;
+}
+
+.clicked .square2 {
+  background-color: #636363 !important;
+  border-color: white !important;
+}
+
+.clicked .box1 {
+  background-color: #636363 !important;
+  border-color: white !important;
+}
+
+.clicked .box2 {
+  background-color: #636363 !important;
+  border-color: white !important;
+}
+
+.clicked .text {
+  color: white;
+}
+
+.square5,
+.square6,
+.square3 {
+  margin: 1px;
+  background-color: #EEEEEE;
+  border: 2px solid black;
+}
+
+.clicked .square7 {
+  background-color: #636363 !important;
+  border-color: white !important;
+}
+
+.clicked .square8 {
+  background-color: #636363 !important;
+  border-color: white !important;
+}
+
+.clicked .square6 {
+  background-color: #636363 !important;
+  border-color: white !important;
+}
+
+.clicked .square3 {
+  background-color: #636363 !important;
+  border-color: white !important;
+}
+
+.clicked .square4 {
+  background-color: #636363 !important;
+  border-color: white !important;
+}
+
+.clicked .square5 {
+  background-color: #636363 !important;
+  border-color: white !important;
+}
+
+.clicked .box1 {
+  background-color: #636363 !important;
+  border-color: white !important;
+}
+
+.clicked .text {
+  color: white;
+}
+

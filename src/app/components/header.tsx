@@ -44,7 +44,7 @@ const menuProps = {
 
 const items: MenuItem[] = [
   {
-    label: <CustomLabel icon={<ImSpoonKnife />} text="맞춤형식이 설계" />,
+    label: <CustomLabel icon={<ImSpoonKnife style={{marginBottom: '-1.5vh', marginTop: '1vh'}}/>} text="맞춤형식이설계" />,
     key: 'BT1',
     style: { color: 'white' },
   },
@@ -54,12 +54,12 @@ const items: MenuItem[] = [
     style: { color: 'white' },
   },
   {
-    label: <CustomLabel icon={<AppstoreOutlined />} text="식단 관리" direction="row" />,
+    label: <CustomLabel icon={<AppstoreOutlined />} text="식단관리" direction="row" />,
     key: 'BT3',
     style: { color: 'white' },
   },
   {
-    label: <CustomLabel icon={<SettingOutlined />} text="지식 카이브" direction="row" />,
+    label: <CustomLabel icon={<SettingOutlined />} text="지식 아카이브" direction="row" />,
     key: 'BT4',
     style: { color: 'white' },
   },
@@ -69,7 +69,7 @@ const items: MenuItem[] = [
     style: { color: 'white' },
   },
   {
-    label: <CustomLabel icon={<SettingOutlined />} text="고객 지원" direction="row" />,
+    label: <CustomLabel icon={<SettingOutlined />} text="고객지원" direction="row" />,
     key: 'BT6',
     style: { color: 'white' },
   },
@@ -77,10 +77,10 @@ const items: MenuItem[] = [
     label: (
       
         <Dropdown menu={{ items: buttonItems }}>
-        <Button size='large'>
+        <Button size='large' style={{width: '8vw'}}>
           <Space>
           김영양
-            <DownOutlined />
+            <DownOutlined style={{display: 'flex', textAlign: 'right'}}/>
           </Space>
         </Button>
       </Dropdown>

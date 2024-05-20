@@ -29,7 +29,7 @@ const Search: React.FC = () => {
 
   return (
     <Input
-      placeholder="세션 검색"
+      placeholder="식단 검색"
       allowClear
       onChange={onChange}
       onFocus={handleFocus}

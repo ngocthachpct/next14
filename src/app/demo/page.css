@@ -1,4 +1,4 @@
-#top-sider{
+#top-sider {
     background-color: white;
     color: rgb(236, 214, 214);
     font-weight: 800;
@@ -9,7 +9,7 @@
     justify-content: space-around;
 }
 
-#center-sider{
+#center-sider {
     background-color: white;
     color: black;
     font-weight: 800;
@@ -20,7 +20,7 @@
     justify-content: space-around;
 }
 
-#bottom-sider{
+#bottom-sider {
     background-color: white;
     color: black;
     font-weight: 800;
@@ -28,44 +28,106 @@
     height: 77vh;
     display: flex;
     align-items: flex-start;
-    justify-content:flex-start ;
+    justify-content: flex-start;
 }
 
-#form1{
-    margin-left: 10vh;
-    margin-right: 10vh;
-}
-
-#form3{
+#form1 {
     margin-top: 3vh;
-    margin-left: 10vh;
-    margin-right: 10vh;
-    border: 1px solid black;
-    border-radius: 3%;
-    height: 80vh;
-    background-color: white;
 }
 
-#form3B{
+#form3 {
+    margin-top: 3vh;
+    margin-left: 10vw;
+    margin-right: 12vw;
+    border: 1px solid black;
+    border-radius: 10px;
+    height: auto;
+    background-color: white;
+    padding-top: 20px;
+}
+
+#form3B {
     margin-top: 3vh;
     margin-left: 10vh;
     margin-right: 10vh;
     border: 1px solid black;
     border-radius: 4px;
-    height: 20vh;
+    height: 15vh;
     background-color: white;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
+#form3C {
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    border-radius: 4px;
+    height: auto;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
-#form4{
+#form4 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
     margin-top: 3vh;
-    margin-left: 10vh;
-    margin-right: 10vh;
-    border: 1px solid black;
-    border-radius: 3%;
-    height: 20vh;
+    margin-bottom: 3vh;
+    margin-left: 10vw;
+    margin-right: 12vw;
+    /* border: 1px solid black; */
+    border-radius: 10px;
+    height: auto;
     background-color: white;
 }
+
+#form5 {
+    margin-top: 3vh;
+    margin-left: 10vw;
+    margin-right: 12vw;
+    margin-bottom: 3vh;
+    border: 1px solid black;
+    border-radius: 10px;
+    height: 100px;
+    background-color: white;
+    padding-top: 20px;
+}
+  
+  .form-container {
+    margin-top: 3vh;
+    margin-left: 10vw;
+    margin-right: 12vw;
+    height: 100vh;
+  }
+  
+  .row-container {
+    height: 100%;
+  }
+  
+  .left-col {
+    height: 100%; 
+    display: flex;
+    flex-direction: column; 
+  }
+  
+  .center-col {
+    border-right: 2px solid #636363;
+    height: 90%; 
+    display: flex;
+    justify-content: center;
+  }
+
+  .right-col {
+    display: flex; 
+    height: 100%;
+
+  }
+
+  .right-col .ant-row {
+    width: 100%;
+    text-align: left; /* Ensure the text is left-aligned within each row */
+  }
+  

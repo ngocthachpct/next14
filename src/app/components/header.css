@@ -52,3 +52,7 @@
 .ant-row-item {
   margin-right: 20px;
 }
+
+.menu-group-right .ant-menu-item::after {
+  border-bottom: none !important; 
+}

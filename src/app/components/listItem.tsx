@@ -3,9 +3,9 @@ import React from "react";
 import { IoStarSharp } from "react-icons/io5";
 import { BsThreeDots } from "react-icons/bs";
 
-const data1 = ["당뇨병 환자를 위한 도시락.", "당뇨병 환자를 위한 도시락."];
+const data1 = ["셀바스에이아이-당뇨도시락", "셀비스에이아이 당뇨 도시락_2"];
 
-const data2 = ["당뇨병 환자를 위한 도시락.", "당뇨병 환자를 위한 도시락."];
+const data2 = ["셀바스에이아이-저염도시락", "셀비스에이아이뷰티핏"];
 
 const ListItem: React.FC = () => (
   <>
@@ -13,7 +13,7 @@ const ListItem: React.FC = () => (
     <List
       header={
         <div style={{ display: "flex", alignItems: "flex-start" }}>
-          가장 좋아하는
+          즐겨찾기
         </div>
       }
       dataSource={data1}
@@ -26,7 +26,6 @@ const ListItem: React.FC = () => (
           }}
         >
           <div>
-            
               <IoStarSharp />
             {" "}
             {item}
@@ -39,7 +38,7 @@ const ListItem: React.FC = () => (
     <List
       header={
         <div style={{ display: "flex", alignItems: "flex-start" }}>
-          대상 목록
+          대상자 목록
         </div>
       }
       dataSource={data2}
