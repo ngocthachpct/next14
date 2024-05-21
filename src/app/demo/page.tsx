@@ -43,7 +43,7 @@ const BlogsPage: React.FC = () => {
   return (
     <Flex gap="middle" wrap="wrap">
       <Layout>
-        <Sider width="20%" style={siderStyle}>
+        <Sider width="22%" style={siderStyle}>
           <div id="top-sider">
             <p style={{ fontWeight: "bold", color: "black" }}>
               <UsergroupAddOutlined />
@@ -129,7 +129,7 @@ const BlogsPage: React.FC = () => {
                   <Col span={6}>
                     <HookUsage />
                   </Col>
-                  <Col span={6} style={{ textAlign: "left" }}>
+                  <Col span={6} style={{ textAlign: "left", paddingLeft: "1vw" }}>
                     kcal
                   </Col>
                 </Row>
@@ -148,7 +148,7 @@ const BlogsPage: React.FC = () => {
                   <Col span={6}>
                     <HookUsage />
                   </Col>
-                  <Col span={3} style={{ textAlign: "left" }}>
+                  <Col span={3} style={{ textAlign: "left", paddingLeft: "1vw" }}>
                     g
                   </Col>
                   <Col span={3} style={{ textAlign: "left" }}>
@@ -169,7 +169,7 @@ const BlogsPage: React.FC = () => {
                   <Col span={6}>
                     <HookUsage />
                   </Col>
-                  <Col span={3} style={{ textAlign: "left" }}>
+                  <Col span={3} style={{ textAlign: "left", paddingLeft: "1vw" }}>
                     g 이상
                   </Col>
                   <Col span={3} style={{ textAlign: "left" }}>
@@ -191,7 +191,7 @@ const BlogsPage: React.FC = () => {
                   <Col span={6}>
                     <HookUsage />
                   </Col>
-                  <Col span={3} style={{ textAlign: "left" }}>
+                  <Col span={3} style={{ textAlign: "left", paddingLeft: "1vw" }}>
                     g
                   </Col>
                   <Col span={3} style={{ textAlign: "left" }}>
@@ -213,7 +213,7 @@ const BlogsPage: React.FC = () => {
                   <Col span={6}>
                     <HookUsage />
                   </Col>
-                  <Col span={3} style={{ textAlign: "left" }}>
+                  <Col span={3} style={{ textAlign: "left", paddingLeft: "1vw" }}>
                     g
                   </Col>
                   <Col span={3} style={{ textAlign: "left" }}>
@@ -234,7 +234,7 @@ const BlogsPage: React.FC = () => {
                   <Col span={6}>
                     <HookUsage />
                   </Col>
-                  <Col span={3} style={{ textAlign: "left" }}>
+                  <Col span={3} style={{ textAlign: "left", paddingLeft: "1vw" }}>
                     mg 이하
                   </Col>
                   <Col span={3} style={{ textAlign: "left" }}>
