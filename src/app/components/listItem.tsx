@@ -43,7 +43,7 @@ const ListItem: React.FC = () => (
       )}
     />
     <List
-      style={{ backgroundColor: "#EEEEEE", height: '100vh'}}
+      style={{ backgroundColor: "#EEEEEE", height: '120vh'}}
       header={
         <div style={{ display: "flex", alignItems: "flex-start", marginLeft: '2vw' }}>
           대상자 목록

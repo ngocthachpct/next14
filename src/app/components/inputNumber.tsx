@@ -21,7 +21,7 @@ const HookUsage: React.FC = () => {
                 <Input value={value} readOnly style={{ textAlign: "center", maxWidth: "6vw" }} />
             </Col>
             <Col>
-                <Button onClick={decrement}>-</Button>
+                <Button onClick={decrement} style={{border: "1px solid black", backgroundColor: "#EEEEEE"}}>-</Button>
             </Col>
         </Row>
     );
