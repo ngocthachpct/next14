@@ -33,12 +33,37 @@ const siderStyle: React.CSSProperties = {
   marginTop: "10px",
 };
 
+const submitButtonStyle: React.CSSProperties = {
+  backgroundColor: "white", 
+  color:"black", 
+  border: "1px solid black"
+}
+
+const cancelButtonStyle: React.CSSProperties = {
+  backgroundColor: "#636363",
+  color: "white",
+  border: "1px solid white"
+
+}
+
 const BlogsPage: React.FC = () => {
   const [showForm5, setShowForm5] = useState(false);
+  const [submitStyle, setSubmitStyle] = useState(submitButtonStyle);
+  const [cancelStyle, setCancelStyle] = useState(submitButtonStyle);
 
   const handleBoxClick = () => {
     setShowForm5(true);
   };
+
+  const handleSaveClick = () => {
+    setSubmitStyle({ backgroundColor: "#636363", color: "white", border: "1px solid white" });
+    setCancelStyle({ backgroundColor: "white", color: "black", border: "1px solid black" });
+  }
+
+  const handleCancelClick = () => {
+    setSubmitStyle({ backgroundColor: "white", color: "black", border: "1px solid black" });
+    setCancelStyle({ backgroundColor: "#636363", color: "white", border: "1px solid white" });
+  }
 
   return (
     <Flex gap="middle" wrap="wrap">
@@ -256,7 +281,8 @@ const BlogsPage: React.FC = () => {
                   type="primary"
                   shape="round"
                   size="middle"
-                  style={{ marginRight: "10vh", width: "10vw", backgroundColor: "#636363" }}
+                  style={{ ...submitStyle, marginRight: "10vh", width: "10vw"}}
+                  onClick={handleSaveClick}
                 >
                   저장
                 </Button>
@@ -264,7 +290,8 @@ const BlogsPage: React.FC = () => {
                   type="primary"
                   shape="round"
                   size="middle"
-                  style={{ marginRight: "10vh", width: "10vw", backgroundColor: "#636363" }}
+                  style={{...cancelStyle ,marginRight: "10vh", width: "10vw" }}
+                  onClick={handleCancelClick}
                 >
                   취소
                 </Button>
