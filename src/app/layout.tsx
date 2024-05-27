@@ -1,9 +1,9 @@
-import type { Metadata } from 'next'
+import { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import StyledComponentsRegistry from '@/lib/antd.registry';
-import Header from './components/header/header';
+import ClientWrapper from './components/ClientWrapper';
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -19,8 +19,9 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <StyledComponentsRegistry>
-          <Header/>
-          {children}
+          <ClientWrapper>
+            {children}
+          </ClientWrapper>
         </StyledComponentsRegistry>
       </body>
     </html>

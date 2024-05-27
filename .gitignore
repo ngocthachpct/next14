@@ -19,11 +19,20 @@
 # misc
 .DS_Store
 *.pem
+.env.local
+.env.development
+.env.test.local
+.env.production
 
 # debug
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+package-lock.json
+.vscode/
+yarn.lock
+public/upload
+.eslintrc.json
 
 # local env files
 .env*.local
